@@ -128,7 +128,7 @@ export class RegisterComponent implements OnInit {
     this.backEnd.register(this.registerForm.value).subscribe(x=>{
         if(x.Status == 0){
           this.confirm = false
-          localStorage.setItem('token', x.Token)
+          sessionStorage.setItem('token', x.Token)
           this.icono = 'check-circle'
           this.status = 'Cuenta creada correctamente!'
           this.contentStatus = 'Bienvenido!!'
