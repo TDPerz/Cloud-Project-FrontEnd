@@ -133,6 +133,7 @@ export class RegisterComponent implements OnInit {
           this.status = 'Cuenta creada correctamente!'
           this.contentStatus = 'Bienvenido!!'
           this.loading = false;
+          this.route.navigate(['/'])
         }
       })
   }
